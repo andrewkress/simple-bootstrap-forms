@@ -8,6 +8,10 @@ How to use my plugin.
 Add this line to your application's Gemfile:
 
 ```ruby
+gem 'simple-bootstrap-forms'
+```
+or
+```ruby
 gem 'simple-bootstrap-forms', github: 'andrewkress/simple-bootstrap-forms'
 ```
 
