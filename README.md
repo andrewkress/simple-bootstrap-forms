@@ -13,6 +13,7 @@ gem 'simple-bootstrap-forms', github: 'andrewkress/simple-bootstrap-forms'
 
 And then execute:
 ```bash
+$ bundle install
 $ rails g simple_bootstrap_forms
 ```
 
