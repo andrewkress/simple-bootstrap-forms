@@ -1,3 +1,5 @@
+[![Gem Version](https://badge.fury.io/rb/simple-bootstrap-forms.svg)](https://badge.fury.io/rb/simple-bootstrap-forms)
+
 # Simple::Bootstrap::Forms
 Simply override the default generators to use bootstrap classes in rails without any dependencies that will be out of date because the maintainer hasn't updated their gem in 4 years.
 
