@@ -1,4 +1,4 @@
-require "simple/bootstrap/forms/railtie"
+require 'simple/bootstrap/forms/railtie'
 
 module Simple
   module Bootstrap
