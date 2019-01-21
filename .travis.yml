@@ -6,6 +6,11 @@ branches:
   only:
   - master
 
+before_install:
+  - openssl aes-256-cbc -K $encrypted_7027482564bf_key -iv $encrypted_7027482564bf_iv -in credentials.enc -out ~/.gem/credentials -d
+  on:
+    branch: master
+
 install:
   - echo "install nothing!"
 
