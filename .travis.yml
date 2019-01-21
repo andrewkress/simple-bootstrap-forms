@@ -6,17 +6,15 @@ branches:
   only:
   - master
 
-before_install:
-  - openssl aes-256-cbc -K $encrypted_7027482564bf_key -iv $encrypted_7027482564bf_iv -in credentials.enc -out ~/.gem/credentials -d
-
 install:
-  - echo "install nothing!"
+- echo "install nothing!"
 
 script:
-  - gem build simple-bootstrap-forms.gemspec
+- gem build simple-bootstrap-forms.gemspec
 
 deploy:
-  provider: script
-  script: gem push *.gem
+  provider: rubygems
+  api_key:
+    secure: GG5Jpl91TiCz7WDT3tTsHJJowWRXyDktQM6ic+TtGeM5OF6n2pMZi0eble54P0hmBHQZ/d3ztf+J2Oye5C8dr4digjVn813ljxOGWL6zdYOPIaC/lg4x5CiqPpDg2h7eZxqasclcL5U2MZjhH/p8kzZv726aJM36iQ0U2DjslX4X73b4URQP2HUhPci8SoajM5dc+mMMcONRTJgbDFNJVJeNqtRzfiKDspVY0+wByC5Av8PiPvCMbWuZeE7XAuKQR2K0Ukog5/Yg3/QvPTth6wQNE1DG/VGmbdLgLEDWNWQU042kIhvSOvMp7hUIDbWV6aRoB3zTq6HqR2KBe1lJJ48lXUQAxzvcM64rsO4fIq3uxI5CEJMFT//chNAV1PLaWSEIzdWhKbYaKK4wWhaEUAsI/XUZ5xJZTyGZWVOWgnyQyXyQjvAMYBtcUDYEVVYV55O6VF4VowJz35+Ub4/DfK/D160+zbCEQi78u5c2eYI8jOW/tJHh1zqPY9wmHjPJi9uA9k2vGmRSo0Mh+V5ffKi7pDRCDSyd4J+uwBPWAxffbvvNXQ1i0SxalCkrvG/YgKNLaedkK26ur4uxTI+sJLFwpK37UN26NTBITGy15QMh7zSYTtUspclzP+35dUsYTdzr5OBpeKj1K9tJtDmrv2BlX5qS4MRQhmlOTzzAB20=
   on:
     branch: master
