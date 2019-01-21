@@ -3,7 +3,7 @@ require_relative 'boot'
 require 'rails/all'
 
 Bundler.require(*Rails.groups)
-require "simple/bootstrap/forms"
+require 'simple/bootstrap/forms'
 
 module Dummy
   class Application < Rails::Application
@@ -16,4 +16,3 @@ module Dummy
     # the framework and any gems in your application.
   end
 end
-

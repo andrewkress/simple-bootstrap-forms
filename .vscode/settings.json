@@ -1,3 +1,4 @@
 {
-    "terminal.integrated.shell.windows": "debian.exe"
+    "terminal.integrated.shell.windows": "debian.exe",
+    "files.eol": "\n"
 }
