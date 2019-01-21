@@ -1,0 +1,19 @@
+sudo: required
+
+language: ruby
+
+branches:
+  only:
+  - master
+
+install:
+  - echo "install nothing!"
+
+script:
+  - gem build simple-bootstrap-forms.gemspec
+
+deploy:
+  provider: script
+  script: gem push *.gem
+  on:
+    branch: master
