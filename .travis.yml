@@ -1,0 +1,19 @@
+sudo: required
+
+language: ruby
+
+branches:
+  only:
+  - master
+
+install:
+  - echo "install nothing!"
+
+script:
+  - echo "do nothing yet"
+
+deploy:
+  provider: script
+  script: echo "push to rubygems"
+  on:
+    branch: master
