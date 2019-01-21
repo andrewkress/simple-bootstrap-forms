@@ -10,10 +10,10 @@ install:
   - echo "install nothing!"
 
 script:
-  - echo "do nothing yet"
+  - gem build simple-bootstrap-forms.gemspec
 
 deploy:
   provider: script
-  script: echo "push to rubygems"
+  script: gem push *.gem
   on:
     branch: master
