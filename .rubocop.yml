@@ -1,0 +1,12 @@
+Metrics/LineLength:
+  Max: 130
+Style/Documentation:
+  Enabled: false
+Layout/IndentationConsistency:
+  EnforcedStyle: rails
+Bundler/OrderedGems:
+  TreatCommentsAsGroupSeparators: true
+AllCops:
+  Exclude:
+    - 'test/dummy/bin/**/*'
+    - 'test/dummy/db/**/*'
