@@ -14,4 +14,8 @@ class SimpleBootstrapFormsGenerator < Rails::Generators::Base
   def copy_error_parial
     copy_file '_error.html.erb', 'app/views/shared/_error.html.erb'
   end
+
+  def copy_index_file
+    copy_file 'index.html.erb', 'lib/templates/erb/scaffold/index.html.erb'
+  end
 end
