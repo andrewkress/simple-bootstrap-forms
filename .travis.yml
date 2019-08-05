@@ -10,6 +10,7 @@ install:
 - gem install rubocop
 
 script:
+- chmod +x bin/test
 - rubocop
 - gem build simple-bootstrap-forms.gemspec
 
