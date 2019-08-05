@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 require 'simple/bootstrap/forms/railtie'
 
 module Simple

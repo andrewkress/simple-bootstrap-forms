@@ -3,7 +3,7 @@ Metrics/LineLength:
 Style/Documentation:
   Enabled: false
 Layout/IndentationConsistency:
-  EnforcedStyle: rails
+  EnforcedStyle: indented_internal_methods
 Bundler/OrderedGems:
   TreatCommentsAsGroupSeparators: true
 AllCops:

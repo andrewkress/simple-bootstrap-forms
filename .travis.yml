@@ -6,10 +6,12 @@ branches:
   only:
   - master
 
-install:
-- echo "install nothing!"
+install: 
+- gem install rubocop
 
 script:
+- chmod +x bin/test
+- rubocop
 - gem build simple-bootstrap-forms.gemspec
 
 deploy:
