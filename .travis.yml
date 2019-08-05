@@ -13,7 +13,7 @@ install:
 script:
 - chmod +x bin/test
 - rubocop
-- rails test
+- rake test
 - gem build simple-bootstrap-forms.gemspec
 
 deploy:
