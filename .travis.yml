@@ -9,6 +9,7 @@ branches:
 install: 
 - gem install rubocop
 - gem install rails
+- gem install rake
 
 script:
 - chmod +x bin/test
