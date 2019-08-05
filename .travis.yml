@@ -8,13 +8,9 @@ branches:
 
 install: 
 - gem install rubocop
-- gem install rails
-- gem install rake
 
 script:
-- chmod +x bin/test
 - rubocop
-- rake test
 - gem build simple-bootstrap-forms.gemspec
 
 deploy:
