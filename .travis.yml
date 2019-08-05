@@ -11,6 +11,7 @@ install:
 - gem install rails
 
 script:
+- chmod +x bin/test
 - rubocop
 - rails test
 - gem build simple-bootstrap-forms.gemspec
