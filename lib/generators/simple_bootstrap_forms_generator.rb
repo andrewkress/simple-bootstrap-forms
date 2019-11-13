@@ -18,4 +18,8 @@ class SimpleBootstrapFormsGenerator < Rails::Generators::Base
   def copy_index_file
     copy_file 'index.html.erb', 'lib/templates/erb/scaffold/index.html.erb'
   end
+
+  def copy_show_file
+    copy_file 'show.html.erb', 'lib/templates/erb/scaffold/show.html.erb'
+  end
 end
