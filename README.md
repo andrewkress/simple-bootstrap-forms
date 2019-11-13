@@ -25,11 +25,12 @@ $ bundle install
 $ rails g simple_bootstrap_forms
 ```
 
-4 files will be generated:
+5 files will be generated:
 
 - config/initializers/simple_boostrap_forms.rb (Config to suppress generating scaffold.scss)
 - lib/templates/erb/scaffold/_form.html.erb (Simple override to the standard generator)
 - lib/templates/erb/scaffold/index.html.erb (Simple override to the standard generator)
+- lib/templates/erb/scaffold/show.html.erb (Simple override to the standard generator)
 - app/views/shared/_error.html.erb (Shared error partial to keep code DRY)
 
 ## Contributing
